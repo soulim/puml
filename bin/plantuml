@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -o errexit   # Always exit on error
+set -o nounset   # Treat unset variables as errors
+
+docker run --rm \
+           --interactive \
+           soulim/plantuml:latest \
+           $@
