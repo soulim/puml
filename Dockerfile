@@ -15,5 +15,5 @@ RUN set -eux; \
     && wget "http://downloads.sourceforge.net/project/plantuml/${plantuml_version}/plantuml.${plantuml_version}.jar" -O plantuml.jar \
     && apk del wget
 
-ENTRYPOINT ["java", "-jar", "plantuml.jar"]
+ENTRYPOINT ["java", "-jar", "plantuml.jar", "-pipe"]
 CMD ["-tsvg"]
