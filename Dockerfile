@@ -17,7 +17,7 @@ RUN set -eux; \
             font-noto \
     && fc-cache --force \
                 --verbose \
-    && wget "http://downloads.sourceforge.net/project/plantuml/${plantuml_version}/plantuml.${plantuml_version}.jar" \
+    && wget "https://github.com/plantuml/plantuml/releases/download/v${plantuml_version}/plantuml-${plantuml_version}.jar" \
             --output-document plantuml.jar \
     && apk del wget
 
