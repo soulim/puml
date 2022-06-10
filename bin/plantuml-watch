@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# puml-watch <path> : Starts watching given PlantUML file for changes
+#                     and generating a PNG-file on each change.
+
+set -o errexit   # Always exit on error
+set -o nounset   # Treat unset variables as errors
+
+source_path=$(realpath "$1")
+output_path="$source_path.png"
+
+echo "Watching: $source_path"
+echo "Output:   $output_path"
+
+echo $source_path \
+| entr -pr sh -c "cat $source_path | plantuml -pipe -tpng > $output_path"
