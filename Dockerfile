@@ -2,7 +2,7 @@ ARG jdk_version="19"
 
 FROM openjdk:${jdk_version}-jdk-alpine
 
-ARG plantuml_version="1.2022.5"
+ARG plantuml_version="1.2022.7"
 
 ENV LANG="C.UTF-8"
 
