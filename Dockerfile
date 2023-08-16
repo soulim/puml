@@ -3,7 +3,7 @@ ARG os_version="alpine3.16"
 
 FROM openjdk:${jdk_version}-jdk-${os_version}
 
-ARG plantuml_version="1.2023.9"
+ARG plantuml_version="1.2023.10"
 
 ENV LANG="C.UTF-8"
 
