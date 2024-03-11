@@ -1,4 +1,4 @@
-ARG jdk_version="22"
+ARG jdk_version="23"
 ARG os_version="bookworm"
 
 FROM openjdk:${jdk_version}-jdk-${os_version}
