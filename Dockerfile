@@ -3,7 +3,7 @@ ARG os_version="bookworm"
 
 FROM openjdk:${jdk_version}-jdk-${os_version}
 
-ARG plantuml_version="1.2023.13"
+ARG plantuml_version="1.2024.3"
 
 ENV LANG="C.UTF-8"
 
