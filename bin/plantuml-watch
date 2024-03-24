@@ -1,16 +1,26 @@
 #!/usr/bin/env sh
 
-# puml-watch <path> : Starts watching given PlantUML file for changes
-#                     and generating a PNG-file on each change.
+# Watches given PlantUML file for changes and generates an image on each change.
+#
+# path   - a string path to a PlantUML file.
+# format - a string format of the output image file (default: png):
+#          png - PNG output format.
+#          svg - SVG output format.
+#
+# Examples
+#
+#   puml-watch hello.puml svg
+#   #=> hello.puml.svg
 
 set -o errexit   # Always exit on error
 set -o nounset   # Treat unset variables as errors
 
 source_path=$(realpath "$1")
-output_path="$source_path.png"
+format=${2:-"png"}
+output_path="$source_path.$format"
 
 echo "Watching: $source_path"
 echo "Output:   $output_path"
 
 echo $source_path \
-| entr -pr sh -c "cat $source_path | plantuml -pipe -tpng > $output_path"
+| entr -pr sh -c "cat $source_path | plantuml -pipe -t$format > $output_path"
