@@ -22,5 +22,5 @@ output_path="$source_path.$format"
 echo "Watching: $source_path"
 echo "Output:   $output_path"
 
-echo $source_path \
+echo "$source_path" \
 | entr -pr sh -c "cat $source_path | plantuml -pipe -t$format > $output_path"
