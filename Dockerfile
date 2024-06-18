@@ -1,9 +1,9 @@
-ARG jdk_version="23"
-ARG os_version="bookworm"
+ARG jdk_version="8u412-b08"
+ARG os_version="jammy"
 
-FROM openjdk:${jdk_version}-jdk-${os_version}
+FROM eclipse-temurin:${jdk_version}-jdk-${os_version}
 
-ARG plantuml_version="1.2024.3"
+ARG plantuml_version="1.2024.5"
 
 ENV LANG="C.UTF-8"
 
