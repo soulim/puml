@@ -7,8 +7,6 @@ ARG plantuml_version="1.2024.5"
 
 ENV LANG="C.UTF-8"
 
-COPY local.conf /etc/fonts/
-
 RUN set -eux; \
     apt-get update; \
     apt-get install --no-install-recommends \
