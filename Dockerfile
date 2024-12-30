@@ -1,9 +1,9 @@
-ARG jdk_version="8u412-b08"
+ARG jdk_version="21.0.5_11"
 ARG os_version="jammy"
 
 FROM eclipse-temurin:${jdk_version}-jdk-${os_version}
 
-ARG plantuml_version="1.2024.6"
+ARG plantuml_version="1.2024.8"
 
 ENV LANG="C.UTF-8"
 
@@ -17,6 +17,7 @@ RUN set -eux; \
                     ca-certificates \
                     fontconfig \
                     fonts-noto \
+                    fonts-firacode \
     && fc-cache --force \
                 --verbose \
     && wget "https://github.com/plantuml/plantuml/releases/download/v${plantuml_version}/plantuml-${plantuml_version}.jar" \
