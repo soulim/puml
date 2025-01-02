@@ -1,3 +1,8 @@
 @startuml
-Alice -> Bob: Hello, world.
+title "Example"
+caption "Figure 1: Alice and Bob talking."
+footer "Updated on %date('YYYY-MM-dd')\nPlantUML v.%version()"
+
+Alice -> Bob: Hello, Bob.
+Bob --> Alice: Hi, Alice!
 @enduml
