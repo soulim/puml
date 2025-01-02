@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# puml-build builds a Docker image named "soulim/puml".
+# The image is a dependency for other tools.
+
+set -o errexit  # Exit immediately if a command fails.
+set -o nounset  # Treat any unset variable as an error.
+set -o pipefail # Exit if any command in a pipeline fails.
+# set -o xtrace
+
+cd "$(dirname "$(realpath "$0")")/.."
+
+docker build --tag "soulim/puml" \
+             --force-rm \
+             .

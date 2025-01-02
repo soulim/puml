@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# puml-cli runs PlantUML CLI using a Docker image.
+# Any command-line arguments given to puml-run are passed to PlantUML CLI.
+
+set -o errexit  # Exit immediately if a command fails.
+set -o nounset  # Treat any unset variable as an error.
+set -o pipefail # Exit if any command in a pipeline fails.
+# set -o xtrace
+
+cd "$(dirname "$(realpath "$0")")/.."
+
+docker run --rm \
+           --interactive \
+           "soulim/puml:latest" \
+           "$@"

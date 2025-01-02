@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# puml-serve runs a PlantUML server using a Docker image.
+# The server is available on 8080 port.
+
+set -o errexit  # Exit immediately if a command fails.
+set -o nounset  # Treat any unset variable as an error.
+set -o pipefail # Exit if any command in a pipeline fails.
+# set -o xtrace
+
+cd "$(dirname "$(realpath "$0")")/.."
+
+docker run --rm \
+           --publish "8080:8080" \
+           "soulim/puml:latest" \
+           -picoweb

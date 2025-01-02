@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-
-set -o errexit   # Always exit on error
-set -o nounset   # Treat unset variables as errors
-
-docker run --rm \
-           --publish 8080:8080 \
-           soulim/plantuml:latest \
-           -picoweb

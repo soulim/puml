@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# puml acts as a runner for other commands from the suite.
+
+set -o errexit  # Exit immediately if a command fails.
+set -o nounset  # Treat any unset variable as an error.
+set -o pipefail # Exit if any command in a pipeline fails.
+# set -o xtrace
+
+cd "$(dirname "$(realpath "$0")")/.."
+
+cmd="${1:-cli}"
+bin="bin/puml-$cmd"
+
+if ! test -f "$bin"
+then
+  echo "error: unknown command '$cmd'"
+  exit 1
+fi
+
+# Because the first argument is assumed to be a command to run,
+# shift given arguments by one if any given.
+test "$#" != "0" && shift
+
+exec "$bin" "$@"

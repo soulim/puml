@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+# puml-watch uses entr(1), https://eradman.com/entrproject/, to watch given file for changes.
+# On each change it renders a PlantUML diagram image in given format.
+#
+# path   - a string path to a PlantUML file.
+# format - a string format of the output image file (default: png):
+#          png - PNG output format.
+#          svg - SVG output format.
+#
+# Examples
+#
+#   puml-watch hello.puml svg
+#   #=> hello.puml.svg
+
+set -o errexit  # Exit immediately if a command fails.
+set -o nounset  # Treat any unset variable as an error.
+set -o pipefail # Exit if any command in a pipeline fails.
+# set -o xtrace
+
+cd "$(dirname "$(realpath "$0")")/.."
+
+source_path=$(realpath "$1")
+format=${2:-"png"}
+output_path="$source_path.$format"
+
+echo "Watching  : $source_path" 1>&2
+echo "Output    : $output_path" 1>&2
+
+puml_cmd=$(realpath "bin/puml-cli")
+
+echo "$source_path" \
+| entr -pr sh -c "cat $source_path | $puml_cmd -pipe -t$format > $output_path"
