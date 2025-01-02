@@ -30,6 +30,14 @@ puml serve
 
 Starts a local PlantUML server available on port 8080.
 
+### Diagram render
+
+```shell
+puml render <path> [<format>]
+```
+
+Generates a diagram image from given PlantUML source file and send it to the standard output.
+
 ### File watcher
 
 ```shell
