@@ -7,6 +7,14 @@ It's opinionated and created with my personal needs in mind.
 However the tool set is generic enough and might be useful for you as well.
 Simply try it and decide for yourself.
 
+## Why?
+
+`puml` grew naturally from scripts I created for personal diagramming needs.
+It allows to build a Docker image that includes an official release of PlantUML and following additional components and configuration settings:
+
+- Beautiful fonts [Noto][4] (used by default) and [Fire Code][5]
+- `PLANTUML_LIMIT_SIZE` environment variable is set to `8192` to enable huge diagrams
+
 ## Dependencies
 
 - Docker
@@ -90,3 +98,5 @@ See [COPYING](COPYING) for license text.
 [1]: https://plantuml.com/
 [2]: https://plantuml.com/command-line
 [3]: https://eradman.com/entrproject/
+[4]: https://fonts.google.com/noto
+[5]: https://github.com/tonsky/FiraCode
