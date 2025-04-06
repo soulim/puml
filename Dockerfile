@@ -3,7 +3,7 @@ ARG os_version="jammy"
 
 FROM eclipse-temurin:${jdk_version}-jdk-${os_version}
 
-ARG plantuml_version="1.2024.8"
+ARG plantuml_version="1.2025.2"
 
 ENV LANG="C.UTF-8"
 ENV PLANTUML_LIMIT_SIZE=8192
