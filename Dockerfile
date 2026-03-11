@@ -12,6 +12,7 @@ RUN set -eux; \
   fonts-noto \
   fonts-noto-mono \
   fonts-jetbrains-mono \
+  fonts-ibm-plex \
   && fc-cache --force --verbose \
   && apt-get autoremove \
   && apt-get clean \
