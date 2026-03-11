@@ -25,4 +25,4 @@ echo "Output    : $output_path" 1>&2
 puml_cmd=$(realpath "bin/puml-render")
 
 echo "$source_path" \
-| entr -pr sh -c "$puml_cmd $source_path $format > $output_path"
+| entr -prn sh -c "$puml_cmd $source_path $format > $output_path"
