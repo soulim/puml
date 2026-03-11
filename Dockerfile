@@ -1,4 +1,4 @@
-ARG plantuml_version="1.2025.4"
+ARG plantuml_version="1.2026.2"
 
 FROM ghcr.io/plantuml/plantuml:${plantuml_version}
 
