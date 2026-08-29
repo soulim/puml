@@ -1,10 +1,10 @@
-ARG plantuml_version="1.2026.2"
+ARG plantuml_version="1.2026.7"
 
 FROM ghcr.io/plantuml/plantuml:${plantuml_version}
 
 ENV PLANTUML_LIMIT_SIZE=8192
 
-COPY local.conf /etc/fonts/
+USER root
 
 RUN set -eux; \
   apt-get update \
@@ -15,8 +15,9 @@ RUN set -eux; \
   fonts-ibm-plex \
   && fc-cache --force --verbose \
   && apt-get autoremove \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists
+  && apt-get clean
+
+USER appuser
 
 ENTRYPOINT ["java", "-jar", "/opt/plantuml.jar", "-pipe"]
 CMD ["-tsvg"]
