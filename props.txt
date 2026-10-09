@@ -1,0 +1,437 @@
+
+[ root ]
+LineThickness
+Margin
+Padding
+Shadowing
+
+[ caption ]
+LineThickness
+
+[ footer ]
+LineThickness
+
+[ header ]
+LineThickness
+
+[ title ]
+BorderRoundCorner
+BorderThickness
+FontSize
+LineThickness
+
+[ groupHeader ]
+FontStyle
+
+[ node ]
+FontSize
+MaximumWidth
+Padding
+RoundCorner
+roundcorner
+
+[ referenceHeader ]
+FontStyle
+
+[ separator ]
+FontSize
+FontStyle
+LineThickness
+Margin
+
+[ participant ]
+Margin 5
+Padding 15
+Padding 5
+
+[ global ]
+BackgroundColor
+DiamondBackgroundColor
+Margin
+Padding
+RoundCorner
+fontSize
+fontStyle
+padding
+skinparam
+skinparam ArrowColor
+skinparam BackgroundColor
+skinparam BoxPadding
+skinparam DefaultFontName Dejavu
+skinparam DefaultTextAlignment
+skinparam Dpi
+skinparam FontColor
+skinparam LegendBackgroundColor
+skinparam LegendBorderColor
+skinparam LegendFontName VL
+skinparam LifelineStrategy
+skinparam RoundCorner
+skinparam SequenceGroupBorderColor
+skinparam SequenceGroupBorderThickness
+skinparam SequenceGroupFontColor
+skinparam SequenceGroupHeaderFontColor
+skinparam SequenceLifeLineBorderColor
+skinparam SequenceMessageAlign
+skinparam Shadowing
+skinparam SwimlaneWrapTitleWidth
+skinparam TitleBorderThickness
+skinparam TitleFontSize
+skinparam UseBetaStyle
+skinparam WrapWidth
+skinparam actorStyle
+skinparam backgroundColor
+skinparam defaultFontSize
+skinparam dpi
+skinparam noteTextAlignment
+skinparam roundcorner
+skinparam shadowing
+skinparam useBetaStyle
+
+[ skinparam Activity ]
+skinparam
+
+[ skinparam Boundary ]
+skinparam
+
+[ skinparam Box ]
+Padding
+skinparam
+
+[ skinparam CircledCharacter ]
+Radius
+skinparam
+
+[ skinparam Class ]
+skinparam
+
+[ skinparam ClassAttribute ]
+skinparam
+
+[ skinparam ClassStereotype ]
+skinparam
+
+[ skinparam Footer ]
+skinparam
+
+[ skinparam Header ]
+skinparam
+
+[ skinparam Hyperlink ]
+skinparam
+
+[ skinparam IconPackage ]
+skinparam
+
+[ skinparam IconPrivate ]
+skinparam
+
+[ skinparam IconProtected ]
+skinparam
+
+[ skinparam IconPublic ]
+skinparam
+
+[ skinparam Note ]
+skinparam
+
+[ skinparam Object ]
+skinparam
+
+[ skinparam Package ]
+skinparam
+
+[ skinparam State ]
+skinparam
+
+[ skinparam StereotypeA ]
+skinparam
+
+[ skinparam StereotypeC ]
+skinparam
+
+[ skinparam StereotypeE ]
+skinparam
+
+[ skinparam StereotypeI ]
+skinparam
+
+[ skinparam StereotypeN ]
+skinparam
+
+[ skinparam UseCaseStereoType ]
+skinparam
+
+[ skinparam stereotype ]
+skinparam
+
+[ skinparam title ]
+BorderRoundCorner
+BorderThickness
+FontSize
+skinparam
+
+[ skinparam legend ]
+BackgroundColor
+skinparam
+
+[ skinparam swimlane ]
+BorderThickness
+TitleFontStyle
+skinparam
+
+[ skinparam activity ]
+skinparam
+
+[ skinparam participant ]
+BackgroundColor
+BorderColor
+BorderThickness
+FontColor
+ParticipantBorderThickness
+skinparam
+
+[ skinparam actor ]
+BackgroundColor
+BorderColor
+FontColor
+skinparam
+
+[ skinparam arrow ]
+Thickness
+skinparam
+
+[ skinparam sequence ]
+ArrowThickness
+BackgroundColor
+DividerBorderThickness
+GroupBorderThickness
+GroupFontStyle
+LifeLineBorderThickness
+ReferenceAlignment
+ReferenceBorderThickness
+StereotypeFontSize
+skinparam
+
+[ skinparam partition ]
+BackgroundColor
+fontStyle
+skinparam
+
+[ skinparam collections ]
+BackgroundColor
+BorderColor
+BorderThickness
+FontColor
+skinparam
+
+[ skinparam control ]
+BackgroundColor
+BorderColor
+FontColor
+skinparam
+
+[ skinparam entity ]
+BackgroundColor
+BorderColor
+FontColor
+skinparam
+
+[ skinparam boundary ]
+BackgroundColor
+BorderColor
+FontColor
+skinparam
+
+[ skinparam agent ]
+BackgroundColor
+BorderColor
+FontColor
+RoundCorner
+skinparam
+
+[ skinparam note ]
+BackgroundColor
+BorderColor
+BorderThickness
+FontColor
+RoundCorner
+skinparam
+
+[ skinparam artifact ]
+BackgroundColor
+BorderColor
+RoundCorner
+skinparam
+
+[ skinparam component ]
+skinparam
+
+[ skinparam interface ]
+skinparam
+
+[ skinparam storage ]
+skinparam
+
+[ skinparam node ]
+Roundcorner
+skinparam
+
+[ skinparam cloud ]
+BackgroundColor
+BorderColor
+Roundcorner
+skinparam
+
+[ skinparam database ]
+BackgroundColor
+BorderColor
+FontColor
+Roundcorner
+skinparam
+
+[ skinparam class ]
+AttributeFontSize
+BorderThickness
+StereotypeFontSize
+skinparam
+
+[ skinparam object ]
+AttributeFontSize
+BorderThickness
+skinparam
+
+[ skinparam usecase ]
+BorderThickness
+skinparam
+
+[ skinparam rectangle ]
+BorderThickness
+skinparam
+
+[ skinparam package ]
+BorderThickness
+skinparam
+
+[ skinparam folder ]
+BorderThickness
+Roundcorner
+skinparam
+
+[ skinparam frame ]
+BorderThickness
+Roundcorner
+skinparam
+
+[ skinparam state ]
+AttributeFontSize
+skinparam
+
+[ skinparam queue ]
+BackgroundColor
+BorderColor
+BorderThickness
+FontColor
+skinparam
+
+[ skinparam card ]
+RoundCorner
+skinparam
+
+[ skinparam file ]
+RoundCorner
+skinparam
+
+[ skinparam stack ]
+skinparam
+
+[ skinparam map ]
+skinparam
+
+[ network ]
+LineThickness
+
+[ group ]
+LineThickness
+Margin
+Padding
+
+[ task ]
+FontSize
+FontStyle
+Margin 10 2 2
+Padding
+
+[ milestone ]
+FontSize
+FontStyle
+
+[ skinparam ]
+RoundCorner
+TitleFontSize
+actorStereotypeFontSize
+boxPadding
+circledCharacterFontSize
+circledCharacterRadius
+classStereotypeFontSize
+componentStereotypeFontSize
+defaultFontSize
+defaultTextAlignment
+legendBorderColor
+legendBorderThickness
+lifelineStrategy
+nodeStereotypeFontSize
+participantPadding
+shadowing
+stereotypeFontSize
+useBetaStyle
+
+[ wbsDiagram ]
+BorderThickness
+LineThickness
+Margin
+fontSize
+fontStyle
+
+[ skinparam person ]
+skinparam
+
+[ timeline ]
+FontName
+FontStyle
+
+[ arrow ]
+FontSize
+FontStyle
+LineStyle
+
+[ highlight ]
+FontStyle
+
+[ mindmapDiagram ]
+Roundcorner
+
+[ constraintArrow ]
+FontStyle
+LineThickness
+
+[ style mindmapDiagram ]
+LineThickness
+Margin
+style
+
+[ box ]
+LineStyle
+LineThickness
+
+[ skinparam sequenceDivider ]
+BorderColor
+BorderThickness
+FontColor
+skinparam
+
+[ skinparam circledCharacter ]
+radius
+skinparam
+
+[ skinparam SequenceBox ]
+skinparam

@@ -1,0 +1,18 @@
+---
+name: TODO
+description: TODO
+author: TODO
+---
+
+` --color-name: #CODE
+
+--font-family-name: "JetBrains Mono"
+--font-size: 13
+--font-style: bold
+
+' --line-color: var(--)
+' --line-width: 1
+
+!include ./cyberdeck/root.pss
+!include ./cyberdeck/document.pss
+' !include "./cyberdeck/sequence.pss"

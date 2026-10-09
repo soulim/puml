@@ -1,0 +1,4 @@
+document {
+    FontName var(--font-family-name)
+    FontSize var(--font-size)
+}

@@ -1,0 +1,6 @@
+root {
+    FontName var(--font-family-name)
+    FontSize var(--font-size)
+    FontStyle var(--font-style)
+    Shadowing: 0.0
+}
